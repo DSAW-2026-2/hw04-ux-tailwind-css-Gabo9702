@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroERP - Inicio</title>
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#166534',
+                        'primary-hover': '#14532d',
+                        'primary-light': '#dcfce7' 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl text-primary dark:text-green-400">MicroERP</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-green-400 px-3 py-2 text-sm font-medium">Inicio</a>
+                    <a href="#caracteristicas" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-green-400 px-3 py-2 text-sm font-medium">Características</a>
+                    <a href="#equipo" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-green-400 px-3 py-2 text-sm font-medium">Equipo</a>
+                    <a href="#contacto" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-green-400 px-3 py-2 text-sm font-medium">Contacto</a>
+                </nav>
+
+                <!-- Fragmento de IA -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <!-- Icono Luna (para light mode) -->
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <!-- Icono Sol (para dark mode) -->
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    
+                    <a href="#" class="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Acceder</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+            <span class="text-sm font-semibold tracking-wide text-primary dark:text-green-400 uppercase">Sistema de Gestión Integral</span>
+            <h1 class="mt-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                La gestión de inventario <br class="hidden sm:block"> para negocios simplificada al máximo
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-gray-500 dark:text-gray-400">
+                Controle existencias, ventas y productos desde cualquier dispositivo. Optimizado para pequeños y medianos negocios de cualquier giro comercial.
+            </p>
+        </section>
+
+        <section id="caracteristicas" class="bg-white dark:bg-gray-800 py-16 sm:py-24 transition-colors duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Todo lo que necesita para el control de su negocio</h2>
+                <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-3xl mx-auto">Diseñado para facilitar la administración de inventario de cualquier tipo de negocio, permitiendo un flujo ágil de información.</p>
+                
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-100 dark:border-gray-600">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Control de Inventario</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Supervise existencias, controle el flujo de productos y reciba alertas automatizadas antes de que se agoten los artículos esenciales.</p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-100 dark:border-gray-600">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Reportes en Tiempo Real</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Tome decisiones basadas en datos con dashboards interactivos de ventas, rotación de productos y márgenes de ganancias diarios.</p>
+                    </div>
+
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-100 dark:border-gray-600">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Gestión Multi-usuario</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Asigne roles y permisos específicos para administradores, vendedores y clientes, garantizando la seguridad de la información.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Sobre el Equipo</h2>
+            <p class="mt-4 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Profesionales comprometidos con transformar la administración de negocios a través de la tecnología.</p>
+            
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="w-20 h-20 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-4"></div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Carlos Gabriel Rodríguez Ornelas</h3>
+                    <p class="text-primary dark:text-green-400 font-medium text-sm mt-1">Backend y apoyo frontend</p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="w-20 h-20 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-4"></div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Jorge Luis Osorio Silva</h3>
+                    <p class="text-primary dark:text-green-400 font-medium text-sm mt-1">Frontend y documentación</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div class="w-20 h-20 bg-gray-200 dark:bg-gray-600 rounded-full mx-auto mb-4"></div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Nicolás García Mejía</h3>
+                    <p class="text-primary dark:text-green-400 font-medium text-sm mt-1">Infraestructura, Base de datos y backend</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 dark:text-gray-400 text-sm">
+                MicroERP © 2026 MicroERP. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        /*Fragmento de IA*/
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+            document.documentElement.classList.remove('dark');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
